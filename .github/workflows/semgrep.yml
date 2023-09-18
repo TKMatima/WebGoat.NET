@@ -27,7 +27,7 @@ jobs:
             semgrep \
               --sarif --output report.sarif \
               --metrics=off \
-              --config="p/owasp-top-ten"
+              --config=auto
             
         # upload to GAS
         - name: Upload SARIF file to GAS
