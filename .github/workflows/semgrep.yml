@@ -27,7 +27,7 @@ jobs:
             semgrep \
               --sarif --output report.sarif \
               --metrics=off \
-              --config="p/security-code-scan"
+              --config="p/default"
             
         # upload to GAS
         - name: Upload SARIF file to GAS
